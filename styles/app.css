@@ -63,10 +63,6 @@ link:hover {
   font-size: 20px;
 }
 
-.application-link {
-  justify-content: end;
-}
-
 .container {
   margin: 5rem auto;
 }
@@ -96,9 +92,6 @@ link:hover {
   .col {
     margin: 3rem auto 0;
   }
-  .container {
-    margin-top: 0;
-  }
   .second {
     flex-direction: column-reverse;
   }
@@ -107,5 +100,8 @@ link:hover {
 @media (min-width: 768px) {
   .col {
     margin: 0 10px;
+  }
+  .container {
+    margin: 0 auto 5rem;
   }
 }
