@@ -35,7 +35,7 @@ hr {
   margin: 5rem auto;
 }
 
-.link {
+button {
   border-radius: 4px;
   padding: 13px 40px;
   text-decoration: none;
@@ -43,13 +43,16 @@ hr {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
 }
 
-link:hover {
+button:hover {
   color: white;
+  transform: scale(1.1);
 }
 
-.contact-link {
+.contact {
   margin: 2rem auto;
 }
 
