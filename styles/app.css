@@ -71,6 +71,41 @@ link:hover {
   margin: 5rem auto;
 }
 
-.col {
-  margin: 0 10px;
+@media (max-width: 576px) {
+  h1 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .main-content {
+    margin: 5rem 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    margin: 3rem auto 0;
+  }
+  .container {
+    margin-top: 0;
+  }
+  .second {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    margin: 0 10px;
+  }
 }
