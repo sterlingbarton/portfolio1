@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #9c64f7;
-  --base-color: #fbf7ff;
+  --primary-color: #2a6f97;
+  --base-color: rgba(169, 206, 239, 0.2);
   --secondary-color: #b485ff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
