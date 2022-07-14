@@ -9,6 +9,23 @@ body {
   background-color: var(--base-color);
 }
 
+button {
+  border-radius: 4px;
+  padding: 0.7rem 2.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -31,64 +48,39 @@ hr {
   margin: 1rem auto;
 }
 
-.main-content {
+.index-main-content {
   text-align: center;
   margin: 5rem auto;
 }
 
-button {
-  border-radius: 4px;
-  padding: 13px 40px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-  border: none;
-  transition: all 0.3s ease-in-out;
-}
-
-button:hover {
-  color: white;
-  transform: scale(1.1);
-}
-
-.contact-container {
+.index-contact-container {
   margin: 2rem auto;
 }
 
-.row {
+.index-row {
   margin: 3rem auto;
 }
 
-.info {
+.app-info {
   margin-bottom: 2.5rem;
   line-height: 1.5;
   font-size: 20px;
 }
 
-.container {
-  margin: 5rem auto;
-}
-
 .inquiry-info {
   display: flex;
-}
-.inquiry-heading {
-  justify-content: start;
 }
 
 .footer {
   background-color: var(--secondary-color);
-  width: 90vw;
-  padding: 0;
+  width: 90%;
   margin-bottom: 5rem;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
   box-shadow: var(--box-shadow);
 }
 
-.about {
+.about-container {
   margin: 5rem;
 }
 
@@ -96,9 +88,18 @@ button:hover {
   text-decoration: none;
 }
 
+.headshot {
+  max-height: 700px;
+}
+
 #contact {
   margin: 0;
   padding: 0;
+}
+
+#about-page {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 @media (max-width: 576px) {
@@ -111,6 +112,22 @@ button:hover {
   .main-content {
     margin: 5rem 2rem;
   }
+  .about-row {
+    flex-direction: column;
+  }
+  .about-container {
+    margin: 3rem;
+  }
+  .headshot {
+    margin-top: 2rem;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+  .workpage-link {
+    padding: 15px 140px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -120,32 +137,59 @@ button:hover {
   h3 {
     font-size: 24px;
   }
-  .row {
+  .index-row {
     flex-direction: column;
   }
-  .col {
+  .index-col {
     margin: 3rem auto 0;
   }
   .second {
     flex-direction: column-reverse;
   }
+  .about-heading {
+    font-size: 38px;
+  }
+  .workpage-link {
+    margin-top: 1rem;
+  }
+  .footer {
+    margin: 3rem auto;
+    padding: 1.5rem;
+  }
+  .inquiry-info {
+    align-items: end;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
-  .col {
+  .index-col {
     margin: 0 10px;
   }
-  .container {
-    margin: 0 auto 5rem;
-  }
-  .workpage {
-    margin-top: 1.5rem;
-  }
   .footer {
-    padding: 2rem 3rem;
+    margin: 3rem auto;
+    padding: 1.5rem;
   }
   .inquiry-info {
-    justify-content: end;
+    align-items: end;
     flex-direction: column;
+  }
+  .about-heading {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-heading {
+    font-size: 54px;
+  }
+  .footer {
+    padding: 2rem 5rem;
+  }
+  .inquiry-info {
+    align-items: center;
+  }
+  .inquiry-heading {
+    align-items: center;
   }
 }
