@@ -114,6 +114,11 @@ hr {
   text-align: center;
 }
 
+.github {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
